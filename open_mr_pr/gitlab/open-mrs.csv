@@ -1,6 +1,6 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
-ccx/ccx-upgrades-inference,131,Update pre-commit hooks version,2025-12-08T07:25:21.388Z,https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/131,ccx-bot,ok,no
-ccx/ccx-upgrades-data-eng,212,Update pre-commit hooks version,2025-12-08T07:03:24.375Z,https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/212,ccx-bot,running,no
+ccx/ccx-upgrades-inference,131,Update pre-commit hooks version,2025-12-08T07:25:21.388Z,https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/131,app/konflux-ci,ok,no
+ccx/ccx-upgrades-data-eng,212,Update pre-commit hooks version,2025-12-08T07:03:24.375Z,https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/212,app/konflux-ci,running,no
 insights-qe/iqe-ccx-plugin,1151,Use the mock AMS new endpoints to register cluster for test endpoints,2025-12-05T15:23:16.386Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1151,ireyes,ok,no
 ccx/parquet-factory,324,fix(deps): update module github.com/xdg-go/scram to v1.2.0,2025-11-24T20:18:39.403Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/324,app/konflux-ci,failed,no
 ccx/parquet-factory,323,fix(deps): update module github.com/prometheus/client_golang to v1.23.2,2025-11-20T08:16:47.894Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/323,app/konflux-ci,failed,no

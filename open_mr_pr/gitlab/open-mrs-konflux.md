@@ -1,11 +1,13 @@
 # Open Merge Requests (Konflux)
 
-*Last updated: 2025-12-12 10:53:13*
+*Last updated: 2025-12-12 10:59:10*
 
-**Total Konflux MRs: 7**
+**Total Konflux MRs: 9**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
+| ccx/ccx-upgrades-inference | [!131](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/131) | Update pre-commit hooks version | 2025-12-08 | app/konflux-ci | ✅ ok | no |
+| ccx/ccx-upgrades-data-eng | [!212](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/212) | Update pre-commit hooks version | 2025-12-08 | app/konflux-ci | 🔄 running | no |
 | ccx/parquet-factory | [!324](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/324) | fix(deps): update module github.com/xdg-go/scram to v1.2.0 | 2025-11-24 | app/konflux-ci | ❌ failed | no |
 | ccx/parquet-factory | [!323](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/323) | fix(deps): update module github.com/prometheus/client_golang to v1.23.2 | 2025-11-20 | app/konflux-ci | ❌ failed | no |
 | ccx/parquet-factory | [!322](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/322) | fix(deps): update module github.com/xitongsys/parquet-go to v1.6.2 | 2025-11-12 | app/konflux-ci | ❌ failed | no |

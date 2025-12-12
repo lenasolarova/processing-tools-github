@@ -1,13 +1,11 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2025-12-12 10:53:13*
+*Last updated: 2025-12-12 10:59:10*
 
-**Total MRs: 16**
+**Total MRs: 14**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| ccx/ccx-upgrades-inference | [!131](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/131) | Update pre-commit hooks version | 2025-12-08 | ccx-bot | ✅ ok | no |
-| ccx/ccx-upgrades-data-eng | [!212](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/212) | Update pre-commit hooks version | 2025-12-08 | ccx-bot | 🔄 running | no |
 | insights-qe/iqe-ccx-plugin | [!1151](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1151) | Use the mock AMS new endpoints to register cluster for test endpoints | 2025-12-05 | ireyes | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
