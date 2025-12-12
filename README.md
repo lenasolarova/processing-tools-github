@@ -4,7 +4,7 @@ This repository and its counterpart living in [GitLab - processing-tools](https:
 
 ## Structure
 - Test archive generation and sending (using [Molodec](https://gitlab.cee.redhat.com/ccx/molodec))
-- Open PRs GitHub action running once per day
+- Open PRs for GitHub and GitLab (commited from GL) action running once per day
 
 ## Related
 - [GitLab processing-tools](https://gitlab.cee.redhat.com/lsolarov/processing-tools) - running scraping from GL repositiories such as open MRs
