@@ -14,15 +14,23 @@ MAX_DAYS_OF_INACTIVITY = int(os.environ.get(
 
 TEMPLATE = """# Glitchtip <-> Jira integration checker
 
+*Last updated: {timestamp}*
+
 ## Open Jira issues for Glitchtip events
-```json:table
-{}
-```
+
+**Total: {jira_count} issue(s)**
+
+| Jira | Glitchtip | Days since last event |
+|------|-----------|----------------------|
+{jira_table_rows}
 
 ## Glitchtip events with no Jira issues
-```json:table
-{}
-```
+
+**Total: {glitchtip_count} issue(s)**
+
+| Glitchtip | Days since last event |
+|-----------|----------------------|
+{glitchtip_table_rows}
 """
 
 
@@ -64,38 +72,22 @@ def get_jira_issues_with_last_seen_older_than(max_days_of_inactivity: int):
 
     return out
 
-def format_issues(data):
-    out = {
-        "fields": [
-            {"key": "issue_url", "label": "Jira"},
-            {"key": "glitchtip_url", "label": "Glitchtip"},
-            {"key": "diff", "label": "Days since last event"}
-        ],
-        "items": [],
-        "filter": True
-    }
-
+def format_issues_as_markdown(data):
+    """Format Jira issues with Glitchtip events as markdown table rows."""
+    rows = []
     for issue in data["issues"]:
-        out["items"].append(
-            {
-                "issue_url": f"https://{JIRA_DOMAIN}/browse/{issue['key']}",
-                "glitchtip_url": issue["glitchtip_url"],
-                "diff": issue["last_seen_in_days"]
-            }
-        )
-    return out
+        jira_url = f"https://{JIRA_DOMAIN}/browse/{issue['key']}"
+        jira_link = f"[{issue['key']}]({jira_url})"
+        glitchtip_link = f"[Link]({issue['glitchtip_url']})"
+        days = issue["last_seen_in_days"] if issue["last_seen_in_days"] is not None else "N/A"
+        rows.append(f"| {jira_link} | {glitchtip_link} | {days} |")
+    return "\n".join(rows) if rows else "| No issues found | | |"
 
 
 
 def get_glitchtip_issues_with_no_jira(max_days_of_inactivity: int):
-    out = {
-        "fields": [
-            {"key": "glitchtip_url", "label": "Glitchtip"},
-            {"key": "diff", "label": "Days since last event"}
-        ],
-        "items": [],
-        "filter": True
-    }
+    """Get Glitchtip issues with no associated Jira issues."""
+    out = []
     issues = glitchtip_issues()
     for issue in issues:
         last_seen_in_days = get_last_seen_in_days(issue)
@@ -105,31 +97,35 @@ def get_glitchtip_issues_with_no_jira(max_days_of_inactivity: int):
         jira_issues = get_issues(
             f'project = CCXDEV AND labels = "{glitchtip_url}" AND status != CLOSED')
         if len(jira_issues["issues"]) == 0:
-            out["items"].append(
-                {
-                    "glitchtip_url": glitchtip_url,
-                    "diff": last_seen_in_days
-                })
+            out.append({
+                "glitchtip_url": glitchtip_url,
+                "diff": last_seen_in_days
+            })
     return out
+
+def format_glitchtip_issues_as_markdown(issues):
+    """Format Glitchtip issues without Jira as markdown table rows."""
+    rows = []
+    for item in issues:
+        glitchtip_link = f"[Link]({item['glitchtip_url']})"
+        days = item["diff"] if item["diff"] is not None else "N/A"
+        rows.append(f"| {glitchtip_link} | {days} |")
+    return "\n".join(rows) if rows else "| No issues found | |"
 
 
 if __name__ == "__main__":
     jira_issues_with_last_seen = get_jira_issues_with_last_seen_older_than(
         MAX_DAYS_OF_INACTIVITY)
+    glitchtip_issues_no_jira = get_glitchtip_issues_with_no_jira(MAX_DAYS_OF_INACTIVITY)
+
+    timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
 
     print(
         TEMPLATE.format(
-            json.dumps(
-                format_issues(jira_issues_with_last_seen),
-                sort_keys=False,
-                indent=4,
-                separators=(',', ': ')
-            ),
-            json.dumps(
-                get_glitchtip_issues_with_no_jira(MAX_DAYS_OF_INACTIVITY),
-                sort_keys=False,
-                indent=4,
-                separators=(',', ': ')
-            ),
+            timestamp=timestamp,
+            jira_count=len(jira_issues_with_last_seen["issues"]),
+            jira_table_rows=format_issues_as_markdown(jira_issues_with_last_seen),
+            glitchtip_count=len(glitchtip_issues_no_jira),
+            glitchtip_table_rows=format_glitchtip_issues_as_markdown(glitchtip_issues_no_jira)
         )
     )
