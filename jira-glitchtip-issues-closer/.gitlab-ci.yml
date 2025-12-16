@@ -1,0 +1,60 @@
+image: registry.access.redhat.com/ubi8/ubi-minimal:8.8-1014
+
+default:
+  tags:
+    - shared-podman
+
+stages:
+  - get
+  - push
+  - delete
+
+.main:
+  before_script:
+    - curl -ksL https://certs.corp.redhat.com/certs/2015-IT-Root-CA.pem -o /etc/pki/ca-trust/source/anchors/RH-IT-Root-CA.crt
+    - curl -ksL https://certs.corp.redhat.com/certs/2022-IT-Root-CA.pem -o /etc/pki/ca-trust/source/anchors/2022-IT-Root-CA.pem
+    - update-ca-trust
+    - microdnf install python39 python39-pip git
+
+    - export GIT_ASKPASS=/tmp/git-askpass.sh
+    - echo "echo ${ACCESS_TOKEN}" > ${GIT_ASKPASS}
+    - chmod +x ${GIT_ASKPASS}
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+  artifacts:
+    paths:
+      - README.md
+
+update-data:
+  extends: .main
+  stage: get
+  variables:
+    MAX_DAYS_OF_INACTIVITY: 7
+  script:
+    - python3.9 -m pip install --user -r requirements.txt
+    - python3 main.py > "README.md"
+
+push-changes:
+  extends: .main
+  stage: push
+  script:
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - git add "README.md"
+    - |
+      if ! git diff --cached --quiet; then
+        git commit -m "update data"
+        git push -o ci-skip "https://oauth2:${ACCESS_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:main
+      else
+        echo "No changes to README.md, skipping commit and push."
+      fi
+
+delete-inactive-jiras:
+  extends: .main
+  stage: delete
+  variables:
+    MAX_DAYS_OF_INACTIVITY: 7
+  when: manual
+  script:
+    - python3.9 -m pip install --user -r requirements.txt
+    - python3 close_jiras.py
