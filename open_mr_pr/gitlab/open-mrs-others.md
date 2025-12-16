@@ -1,13 +1,14 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2025-12-15 11:14:29*
+*Last updated: 2025-12-16 03:33:45*
 
-**Total MRs: 16**
+**Total MRs: 17**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| ccx/ccx-data-pipeline | [!1126](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1126) | [CCXDEV-15618] Add AGENTS.md | 2025-12-15 | jipapous | ✅ ok | no |
-| insights-qe/iqe-ccx-plugin | [!1157](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1157) | Update pre-commit hooks | 2025-12-13 | iqe-bot | ✅ ok | no |
+| ccx/parquet-factory | [!326](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/326) | Remove deprecated CI tag | 2025-12-15 | ireyes | ✅ ok | no |
+| ccx/ccx-upgrades-data-eng | [!213](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/213) | Test ci | 2025-12-15 | ireyes | ✅ ok | no |
+| ccx/ccx-data-pipeline | [!1126](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1126) | [CCXDEV-15618] Add AGENTS.md | 2025-12-15 | jipapous | ❌ failed | no |
 | insights-qe/iqe-ccx-plugin | [!1156](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1156) | Add AGENTS.md | 2025-12-12 | ireyes | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
