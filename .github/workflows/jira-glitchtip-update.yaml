@@ -33,7 +33,7 @@ jobs:
         env:
           MAX_DAYS_OF_INACTIVITY: 7
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
-          GLITCHTIP_TOKEN: ${{ secrets.GLITCHTIP_TOKEN }}
+          GLITCHTIP_API_TOKEN: ${{ secrets.GLITCHTIP_API_TOKEN }}
         run: |
           cd jira-glitchtip-issues-closer
           python3 main.py > README.md
