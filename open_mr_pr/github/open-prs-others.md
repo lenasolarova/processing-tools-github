@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-01-12 04:50:50*
+*Last updated: 2026-01-13 04:40:26*
 
-**Total PRs: 6**
+**Total PRs: 7**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-smart-proxy | [1649](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1649) | [CCXDEV-15516] Group Go version updates + add CI check to keep them in sync | 2026-01-12 | JiriPapousek | ✅ ok | ready |
 | insights-ccx-messaging | [634](https://github.com/RedHatInsights/insights-ccx-messaging/pull/634) | [CCXDEV-15881] Remove multiplexor stage one | 2026-01-07 | lenasolarova | ✅ ok | draft |
 | insights-results-aggregator | [2348](https://github.com/RedHatInsights/insights-results-aggregator/pull/2348) | Do not merge! Testing coderabbitai | 2026-01-05 | matysek | ✅ ok | draft |
 | insights-ccx-messaging | [632](https://github.com/RedHatInsights/insights-ccx-messaging/pull/632) | Do not merge! Testing coderabbitai  | 2026-01-05 | matysek | ✅ ok | draft |
