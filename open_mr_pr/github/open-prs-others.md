@@ -1,12 +1,11 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-01-16 04:40:24*
+*Last updated: 2026-01-17 04:32:33*
 
-**Total PRs: 8**
+**Total PRs: 7**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-ccx-messaging | [639](https://github.com/RedHatInsights/insights-ccx-messaging/pull/639) | Add ingress dependency | 2026-01-15 | lenasolarova | ❌ failed | draft |
 | insights-ccx-messaging | [637](https://github.com/RedHatInsights/insights-ccx-messaging/pull/637) | [CCXDEV-15881] Remove multiplexor stage two | 2026-01-14 | lenasolarova | ❌ failed | ready |
 | ccx-notification-service | [1048](https://github.com/RedHatInsights/ccx-notification-service/pull/1048) | Bump github.com/openshift-online/ocm-sdk-go from 0.1.486 to 0.1.487 | 2026-01-13 | app/dependabot | ❌ failed | ready |
 | insights-results-aggregator | [2348](https://github.com/RedHatInsights/insights-results-aggregator/pull/2348) | Do not merge! Testing coderabbitai | 2026-01-05 | matysek | ✅ ok | draft |
