@@ -1,2 +1,3 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+insights-results-aggregator-cleaner,580,chore(deps): update module github.com/clipperhouse/uax29/v2 to v2.4.0,2026-01-25T04:50:00Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/580,app/red-hat-konflux,ok,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
