@@ -1,9 +1,11 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-02-08 05:23:04*
+*Last updated: 2026-02-09 05:27:05*
 
-**Total Konflux PRs: 1**
+**Total Konflux PRs: 3**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-aggregator-cleaner | [588](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/588) | chore(deps): update all dependencies | 2026-02-09 | app/red-hat-konflux | ✅ ok | ready |
+| insights-results-aggregator | [2359](https://github.com/RedHatInsights/insights-results-aggregator/pull/2359) | chore(deps): update all dependencies | 2026-02-08 | app/red-hat-konflux | ❌ failed | ready |
 | insights-operator-gathering-conditions-service | [567](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/567) | fix(deps): update module github.com/unleash/unleash-go-sdk/v5 to v6 | 2026-02-03 | app/red-hat-konflux | ❌ failed | ready |
