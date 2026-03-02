@@ -1,12 +1,13 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-03-02 04:37:24*
+*Last updated: 2026-03-02 12:32:21*
 
-**Total PRs: 7**
+**Total PRs: 8**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-aggregator | [2369](https://github.com/RedHatInsights/insights-results-aggregator/pull/2369) | Use reusable workflow for BDD tests | 2026-02-27 | joselsegura | ❌ failed | ready |
+| insights-ccx-messaging | [652](https://github.com/RedHatInsights/insights-ccx-messaging/pull/652) | build(deps): update boto3 requirement from <1.42.55,>=1.34.1 to >=1.34.1,<1.42.60 | 2026-03-02 | app/dependabot | ❌ failed | ready |
+| ccx-notification-service | [1065](https://github.com/RedHatInsights/ccx-notification-service/pull/1065) | Bump github.com/IBM/sarama from 1.46.3 to 1.47.0 | 2026-03-02 | app/dependabot | ❌ failed | ready |
 | insights-results-smart-proxy | [1676](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1676) | Bump github.com/openshift-online/ocm-sdk-go from 0.1.496 to 0.1.497 | 2026-02-26 | app/dependabot | ❌ failed | ready |
 | ccx-notification-service | [1063](https://github.com/RedHatInsights/ccx-notification-service/pull/1063) | Bump github.com/openshift-online/ocm-sdk-go from 0.1.494 to 0.1.497 | 2026-02-26 | app/dependabot | ❌ failed | ready |
 | insights-ccx-messaging | [650](https://github.com/RedHatInsights/insights-ccx-messaging/pull/650) | build(deps): bump aiobotocore from 2.26.0 to 3.1.3 | 2026-02-16 | app/dependabot | ❌ failed | ready |
