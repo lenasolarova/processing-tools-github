@@ -1,13 +1,16 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-03-03 05:14:02*
+*Last updated: 2026-03-04 05:08:25*
 
-**Total PRs: 11**
+**Total PRs: 14**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-behavioral-spec | [736](https://github.com/RedHatInsights/insights-behavioral-spec/pull/736) | Move Behave runner to a common function | 2026-03-03 | joselsegura | ✅ ok | ready |
+| insights-results-smart-proxy | [1679](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1679) | Trigger Build | 2026-03-03 | ikerreyes | ❌ failed | ready |
+| insights-ccx-messaging | [654](https://github.com/RedHatInsights/insights-ccx-messaging/pull/654) | Trigger Build | 2026-03-03 | ikerreyes | ❌ failed | ready |
+| insights-ccx-messaging | [653](https://github.com/RedHatInsights/insights-ccx-messaging/pull/653) | [CCXDEV-14695] Remove pr_check as we move tests to Konflux | 2026-03-03 | ikerreyes | ❌ failed | ready |
 | insights-content-template-renderer | [251](https://github.com/RedHatInsights/insights-content-template-renderer/pull/251) | Bump fastapi from 0.132.0 to 0.135.1 | 2026-03-03 | app/dependabot | ❌ failed | ready |
-| insights-behavioral-spec | [733](https://github.com/RedHatInsights/insights-behavioral-spec/pull/733) | Adapt scripts for aggregator-cleaner | 2026-03-02 | joselsegura | ✅ ok | ready |
 | insights-results-smart-proxy | [1678](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1678) | [CCXDEV-14694] We are moving IQE tests to Konflux so we do not need the pr_check script anymore | 2026-03-02 | ikerreyes | ❌ failed | ready |
 | insights-ccx-messaging | [652](https://github.com/RedHatInsights/insights-ccx-messaging/pull/652) | build(deps): update boto3 requirement from <1.42.55,>=1.34.1 to >=1.34.1,<1.42.60 | 2026-03-02 | app/dependabot | ❌ failed | ready |
 | ccx-notification-service | [1065](https://github.com/RedHatInsights/ccx-notification-service/pull/1065) | Bump github.com/IBM/sarama from 1.46.3 to 1.47.0 | 2026-03-02 | app/dependabot | ❌ failed | ready |
