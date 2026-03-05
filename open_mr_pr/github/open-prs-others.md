@@ -1,14 +1,11 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-03-04 05:08:25*
+*Last updated: 2026-03-05 05:12:47*
 
-**Total PRs: 14**
+**Total PRs: 11**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-behavioral-spec | [736](https://github.com/RedHatInsights/insights-behavioral-spec/pull/736) | Move Behave runner to a common function | 2026-03-03 | joselsegura | ✅ ok | ready |
-| insights-results-smart-proxy | [1679](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1679) | Trigger Build | 2026-03-03 | ikerreyes | ❌ failed | ready |
-| insights-ccx-messaging | [654](https://github.com/RedHatInsights/insights-ccx-messaging/pull/654) | Trigger Build | 2026-03-03 | ikerreyes | ❌ failed | ready |
 | insights-ccx-messaging | [653](https://github.com/RedHatInsights/insights-ccx-messaging/pull/653) | [CCXDEV-14695] Remove pr_check as we move tests to Konflux | 2026-03-03 | ikerreyes | ❌ failed | ready |
 | insights-content-template-renderer | [251](https://github.com/RedHatInsights/insights-content-template-renderer/pull/251) | Bump fastapi from 0.132.0 to 0.135.1 | 2026-03-03 | app/dependabot | ❌ failed | ready |
 | insights-results-smart-proxy | [1678](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1678) | [CCXDEV-14694] We are moving IQE tests to Konflux so we do not need the pr_check script anymore | 2026-03-02 | ikerreyes | ❌ failed | ready |
