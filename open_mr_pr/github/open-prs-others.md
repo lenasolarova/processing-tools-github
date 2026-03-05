@@ -1,17 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-03-04 12:29:45*
+*Last updated: 2026-03-05 04:36:19*
 
-**Total PRs: 17**
+**Total PRs: 12**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-behavioral-spec | [737](https://github.com/RedHatInsights/insights-behavioral-spec/pull/737) | Modifications for notification-writer tests | 2026-03-04 | joselsegura | ✅ ok | ready |
-| insights-results-smart-proxy | [1681](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1681) |  switch the StatusOfRequestID to the new optimized handler  | 2026-03-04 | Bee-lee | ❌ failed | ready |
-| data-pipeline | [30](https://github.com/RedHatInsights/data-pipeline/pull/30) | [CCXDEV-16047] try building the container without requirements.txt | 2026-03-03 | juandspy | ❌ failed | ready |
 | data-pipeline | [29](https://github.com/RedHatInsights/data-pipeline/pull/29) | Bumped ccx-rules-ocp version | 2026-03-03 | InsightsDroid | ❌ failed | ready |
-| insights-results-smart-proxy | [1679](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1679) | Trigger Build | 2026-03-03 | ikerreyes | ❌ failed | ready |
-| insights-ccx-messaging | [654](https://github.com/RedHatInsights/insights-ccx-messaging/pull/654) | Trigger Build | 2026-03-03 | ikerreyes | ❌ failed | ready |
 | insights-ccx-messaging | [653](https://github.com/RedHatInsights/insights-ccx-messaging/pull/653) | [CCXDEV-14695] Remove pr_check as we move tests to Konflux | 2026-03-03 | ikerreyes | ❌ failed | ready |
 | insights-content-template-renderer | [251](https://github.com/RedHatInsights/insights-content-template-renderer/pull/251) | Bump fastapi from 0.132.0 to 0.135.1 | 2026-03-03 | app/dependabot | ❌ failed | ready |
 | insights-results-smart-proxy | [1678](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1678) | [CCXDEV-14694] We are moving IQE tests to Konflux so we do not need the pr_check script anymore | 2026-03-02 | ikerreyes | ❌ failed | ready |
