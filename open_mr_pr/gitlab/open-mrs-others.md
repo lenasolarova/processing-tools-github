@@ -1,12 +1,13 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2026-03-05 03:03:47*
+*Last updated: 2026-03-06 03:03:27*
 
-**Total MRs: 16**
+**Total MRs: 17**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| insights-qe/iqe-ccx-plugin | [!1197](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1197) | Draft: feat: Expand endpoint discovery to all API tags | 2026-03-04 | ireyes | ❌ failed | draft |
+| insights-qe/iqe-ccx-plugin | [!1198](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1198) | Add strict content type to the API call | 2026-03-05 | lsolarov | 🔄 unknown | no |
+| insights-qe/iqe-ccx-plugin | [!1197](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1197) | feat: Expand endpoint discovery to all API tags | 2026-03-04 | ireyes | ❌ failed | no |
 | insights-qe/iqe-ccx-plugin | [!1194](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1194) | Update pre-commit hooks | 2026-02-27 | iqe-bot | ❌ failed | no |
 | insights-qe/iqe-ccx-plugin | [!1171](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1171) | Fix test environment detection for openshuft_com_app fixture | 2026-01-28 | jsegural | ❌ failed | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
