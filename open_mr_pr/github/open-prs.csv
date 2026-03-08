@@ -1,4 +1,5 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+data-pipeline,34,"chore(deps): update dependency boto3 to >=1.42.63,<1.43.0",2026-03-07T05:47:41Z,https://github.com/RedHatInsights/data-pipeline/pull/34,app/red-hat-konflux,failed,ready
 insights-results-aggregator-exporter,519,Bump github.com/minio/minio-go/v7 from 7.0.98 to 7.0.99,2026-03-06T23:13:19Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/519,app/dependabot,ok,ready
 insights-results-aggregator-exporter,518,fix(deps): update module github.com/minio/minio-go/v7 to v7.0.99,2026-03-06T17:21:30Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/518,app/red-hat-konflux,ok,ready
 ccx-notification-service,1070,[DON'T MERGE] Using reusable workflow,2026-03-06T17:02:42Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1070,joselsegura,failed,draft
