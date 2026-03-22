@@ -1,6 +1,6 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-03-21 04:34:21*
+*Last updated: 2026-03-22 04:40:18*
 
 **Total Konflux PRs: 15**
 
@@ -17,7 +17,7 @@
 | ccx-notification-writer | [773](https://github.com/RedHatInsights/ccx-notification-writer/pull/773) | fix(deps): update module github.com/lib/pq to v1.12.0 | 2026-03-18 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator | [2387](https://github.com/RedHatInsights/insights-results-aggregator/pull/2387) | chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.7 | 2026-03-18 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-notification-writer | [772](https://github.com/RedHatInsights/ccx-notification-writer/pull/772) | chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.7 | 2026-03-17 | app/red-hat-konflux | ❌ failed | ready |
-| data-pipeline | [37](https://github.com/RedHatInsights/data-pipeline/pull/37) | chore(deps): update dependency boto3 to >=1.42.72,<1.43.0 | 2026-03-12 | app/red-hat-konflux | ❌ failed | ready |
+| data-pipeline | [37](https://github.com/RedHatInsights/data-pipeline/pull/37) | chore(deps): update dependency boto3 to >=1.42.73,<1.43.0 | 2026-03-12 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-notification-service | [1071](https://github.com/RedHatInsights/ccx-notification-service/pull/1071) | Bump github.com/openshift-online/ocm-sdk-go from 0.1.497 to 0.1.498 | 2026-03-12 | app/dependabot | ❌ failed | ready |
 | ccx-notification-writer | [769](https://github.com/RedHatInsights/ccx-notification-writer/pull/769) | chore(deps): update all dependencies | 2026-03-11 | app/red-hat-konflux | ❌ failed | ready |
 | insights-content-template-renderer | [251](https://github.com/RedHatInsights/insights-content-template-renderer/pull/251) | Bump fastapi from 0.132.0 to 0.135.1 | 2026-03-03 | app/dependabot | ❌ failed | ready |
