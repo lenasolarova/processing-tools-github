@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-03-23 05:39:27*
+*Last updated: 2026-03-24 05:22:56*
 
-**Total PRs: 11**
+**Total PRs: 12**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-content-template-renderer | [256](https://github.com/RedHatInsights/insights-content-template-renderer/pull/256) | Bump fastapi from 0.132.0 to 0.135.2 | 2026-03-23 | app/dependabot | ❌ failed | ready |
 | insights-ccx-messaging | [659](https://github.com/RedHatInsights/insights-ccx-messaging/pull/659) | [CCXDEV-15098] rules-uploader add python env vars for better debugging | 2026-03-20 | matysek | ✅ ok | ready |
 | insights-results-smart-proxy | [1686](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1686) | Bump github.com/buger/jsonparser from 1.1.1 to 1.1.2 | 2026-03-19 | app/dependabot | ❌ failed | ready |
 | ccx-notification-writer | [774](https://github.com/RedHatInsights/ccx-notification-writer/pull/774) | Bump github.com/lib/pq from 1.11.2 to 1.12.0 | 2026-03-19 | app/dependabot | ❌ failed | ready |
