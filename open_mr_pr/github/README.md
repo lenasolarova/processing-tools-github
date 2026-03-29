@@ -1,11 +1,12 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-03-28 04:40:14*
+*Last updated: 2026-03-29 04:52:34*
 
-**Total Konflux PRs: 9**
+**Total Konflux PRs: 10**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-aggregator-cleaner | [640](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/640) | chore(deps): update module go.yaml.in/yaml/v2 to v3 | 2026-03-28 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-notification-service | [1080](https://github.com/RedHatInsights/ccx-notification-service/pull/1080) | Bump github.com/buger/jsonparser from 1.1.1 to 1.1.2 | 2026-03-27 | app/dependabot | ❌ failed | ready |
 | ccx-upgrades-inference | [35](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/35) | Update pre-commit hook astral-sh/ruff-pre-commit to v0.15.8 | 2026-03-27 | app/red-hat-konflux | ❌ failed | ready |
 | parquet-factory | [30](https://github.com/RedHatInsights/parquet-factory/pull/30) | chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.8 | 2026-03-27 | app/red-hat-konflux | ❌ failed | ready |
