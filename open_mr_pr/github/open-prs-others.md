@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-04-03 05:41:58*
+*Last updated: 2026-04-04 05:21:01*
 
-**Total PRs: 12**
+**Total PRs: 13**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-aggregator-exporter | [539](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/539) | Bump github.com/lib/pq from 1.12.2 to 1.12.3 | 2026-04-03 | app/dependabot | ❌ failed | ready |
 | insights-results-smart-proxy | [1694](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1694) | Bump github.com/openshift-online/ocm-sdk-go from 0.1.498 to 0.1.499 | 2026-03-31 | app/dependabot | ❌ failed | ready |
 | insights-content-template-renderer | [260](https://github.com/RedHatInsights/insights-content-template-renderer/pull/260) | Bump requests from 2.32.5 to 2.33.1 | 2026-03-30 | app/dependabot | ✅ ok | ready |
 | insights-ccx-messaging | [671](https://github.com/RedHatInsights/insights-ccx-messaging/pull/671) | [CCXDEV-15098] Fix memory leak - add broker size observability gauges | 2026-03-30 | matysek | ✅ ok | draft |
