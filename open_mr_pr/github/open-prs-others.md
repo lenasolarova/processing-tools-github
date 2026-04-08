@@ -1,11 +1,15 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-04-07 05:46:33*
+*Last updated: 2026-04-08 05:46:43*
 
-**Total PRs: 17**
+**Total PRs: 21**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-smart-proxy | [1696](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1696) | Bump github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream from 1.7.4 to 1.7.8 | 2026-04-08 | app/dependabot | ❌ failed | ready |
+| ccx-notification-service | [1087](https://github.com/RedHatInsights/ccx-notification-service/pull/1087) | Bump github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream from 1.7.2 to 1.7.8 | 2026-04-08 | app/dependabot | ❌ failed | ready |
+| ccx-notification-service | [1086](https://github.com/RedHatInsights/ccx-notification-service/pull/1086) | Bump github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs from 1.58.5 to 1.65.0 | 2026-04-08 | app/dependabot | ❌ failed | ready |
+| insights-results-smart-proxy | [1695](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1695) | Bump github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs from 1.63.1 to 1.65.0 | 2026-04-08 | app/dependabot | ❌ failed | ready |
 | insights-content-template-renderer | [261](https://github.com/RedHatInsights/insights-content-template-renderer/pull/261) | Bump fastapi from 0.132.0 to 0.135.3 | 2026-04-06 | app/dependabot | ❌ failed | ready |
 | ccx-notification-writer | [789](https://github.com/RedHatInsights/ccx-notification-writer/pull/789) | Bump github.com/lib/pq from 1.12.2 to 1.12.3 | 2026-04-06 | app/dependabot | ❌ failed | ready |
 | insights-results-aggregator-cleaner | [649](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/649) | Bump github.com/lib/pq from 1.12.2 to 1.12.3 | 2026-04-06 | app/dependabot | ❌ failed | ready |
