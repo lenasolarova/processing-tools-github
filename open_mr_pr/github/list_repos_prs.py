@@ -59,6 +59,8 @@ def get_prs_for_repo(repo_path: str) -> List[Dict[str, Any]]:
             pr["repo"] = repo_name
             pr["ci_status"] = get_ci_status(pr.get("statusCheckRollup", []))
 
+        if not prs:
+            print(f"No open PRs found for {repo_path}", file=sys.stderr)
         return prs
     except subprocess.CalledProcessError as e:
         gh_error = e.stderr.strip() if e.stderr else str(e)
