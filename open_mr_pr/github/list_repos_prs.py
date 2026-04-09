@@ -64,10 +64,13 @@ def get_prs_for_repo(repo_path: str) -> list[dict[str, Any]]:
             pr["repo"] = repo_name
             pr["ci_status"] = get_ci_status(pr.get("statusCheckRollup", []))
 
+        if not prs:
+            print(f"No open PRs found for {repo_path}", file=sys.stderr)
         return prs
     except subprocess.CalledProcessError as e:
-        print(f"Error fetching PRs for {repo_path}: {e}", file=sys.stderr)
-        return []
+        gh_error = e.stderr.strip() if e.stderr else str(e)
+        print(f"Error fetching PRs for {repo_path}: {gh_error}", file=sys.stderr)
+        sys.exit(1)
 
 
 def format_pr_as_csv(pr: dict[str, Any]) -> str:
