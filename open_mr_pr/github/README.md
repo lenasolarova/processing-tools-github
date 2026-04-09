@@ -1,12 +1,11 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-04-08 17:38:55*
+*Last updated: 2026-04-09 04:50:21*
 
-**Total Konflux PRs: 33**
+**Total Konflux PRs: 32**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-aggregator-exporter | [540](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/540) | chore(deps): update all dependencies | 2026-04-08 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1696](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1696) | Bump github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream from 1.7.4 to 1.7.8 | 2026-04-08 | app/dependabot | ❌ failed | ready |
 | ccx-notification-service | [1087](https://github.com/RedHatInsights/ccx-notification-service/pull/1087) | Bump github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream from 1.7.2 to 1.7.8 | 2026-04-08 | app/dependabot | ❌ failed | ready |
 | ccx-notification-service | [1086](https://github.com/RedHatInsights/ccx-notification-service/pull/1086) | Bump github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs from 1.58.5 to 1.65.0 | 2026-04-08 | app/dependabot | ❌ failed | ready |
