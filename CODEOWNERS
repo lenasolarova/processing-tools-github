@@ -1,4 +1,4 @@
-* @RedHatInsights/ccx
+* @RedHatInsights/obsint-processing
 
 # Auto-merge codeowners
 go.mod                  @InsightsDroid @RedHatInsights/obsint-processing
