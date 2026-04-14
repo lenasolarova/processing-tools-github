@@ -1,0 +1,25 @@
+name: Test Codecov composite action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-codecov:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create dummy coverage file
+        run: |
+          cat > coverage.out << 'EOF'
+          mode: set
+          github.com/RedHatInsights/processing-tools/main.go:1.0,2.0 1 1
+          EOF
+
+      - name: Upload coverage to Codecov
+        uses: ./.github/actions/codecov
+        with:
+          files: coverage.out
+          flags: unit-tests
