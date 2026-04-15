@@ -1,0 +1,102 @@
+# Copyright 2023-2026 Red Hat, Inc
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Python tests
+
+on:
+  workflow_call:
+
+    inputs:
+      coverage:
+        description: 'Check the code coverage'
+        type: boolean
+        default: true
+
+      coverage_threshold:
+        description: 'Minimum coverage percentage (0-100)'
+        required: false
+        type: number
+        default: 0
+
+      cov_branch:
+        description: 'Enable branch coverage measurement (adds --cov-branch to pytest)'
+        required: false
+        type: boolean
+        default: false
+
+      install_package:
+        description: 'Install the package in editable mode before running tests (pip install -e .)'
+        required: false
+        type: boolean
+        default: false
+
+      packages:
+        description: 'Package or directory to measure coverage for (passed to --cov). Defaults to current directory.'
+        required: false
+        type: string
+        default: '.'
+
+      requirements_file:
+        description: 'Path to pip requirements file'
+        required: false
+        type: string
+        default: 'requirements.txt'
+
+      python_version:
+        description: 'Python version to use'
+        required: false
+        type: string
+        default: '3.11'
+
+jobs:
+  pytests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    name: Python tests
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ inputs.python_version }}
+
+      - name: Install dependencies
+        run: |
+          if [ -f "${{ inputs.requirements_file }}" ]; then
+            pip install -r ${{ inputs.requirements_file }}
+          fi
+          pip install pytest-cov
+
+      - name: Install package
+        if: inputs.install_package == true
+        run: pip install -e .
+
+      - name: Unit tests
+        if: inputs.coverage != true
+        run: python -m pytest
+
+      - name: Unit tests with coverage
+        if: inputs.coverage == true
+        run: python -m pytest --cov=${{ inputs.packages }} --cov-report=xml:coverage.xml --cov-report=term-missing --cov-fail-under=${{ inputs.coverage_threshold }} ${{ inputs.cov_branch && '--cov-branch' || '' }}
+
+      - name: Push coverage report to Codecov
+        if: inputs.coverage == true
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unit-tests
+          files: coverage.xml
+          fail_ci_if_error: false
