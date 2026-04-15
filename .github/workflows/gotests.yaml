@@ -33,7 +33,6 @@ jobs:
   gotests:
     runs-on: ubuntu-latest
     permissions:
-      id-token: write
       contents: read
     container:
         image: registry.access.redhat.com/ubi9/go-toolset:latest
@@ -60,6 +59,6 @@ jobs:
         if: inputs.coverage == true
         uses: codecov/codecov-action@v5
         with:
-          use_oidc: true
+          token: ${{ secrets.CODECOV_TOKEN }}
           flags: unit-tests
           fail_ci_if_error: false
