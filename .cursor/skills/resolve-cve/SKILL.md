@@ -105,7 +105,7 @@ Determine whether this project is affected:
 5. **Check if the vulnerability is introduced at build time** — find the
    exact version using `syft`. For example:
    ```
-   syft quay.io/repository/redhat-services-prod/obsint-processing-tenant/parquet-factory/parquet-factory:latest
+   syft quay.io/redhat-services-prod/obsint-processing-tenant/parquet-factory/parquet-factory:latest
    ```
    or appending `-o json` if that makes it easier to parse.
    Please make sure to use `--from registry`, otherwise it won't pull the latest
