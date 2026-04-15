@@ -25,19 +25,9 @@ fi
 
 echo "INFO: Dockerfile: $DOCKER_MAJOR_MINOR"
 
-if [ -f .github/workflows/gotests.yaml ]; then
-    # Skip check if gotests.yaml delegates to a reusable workflow (no go-version field)
-    if grep -q 'uses:' .github/workflows/gotests.yaml; then
-        echo "INFO: gotests.yaml uses a reusable workflow, skipping version check."
-        exit 0
-    fi
-    # Extract Go version from gotests workflow
-    GOTESTS_VERSION=$(grep 'go-version:' .github/workflows/gotests.yaml | sed -E 's/.*go-version:\s*"?([0-9]+\.[0-9]+)"?.*/\1/')
-    echo "INFO: gotests.yaml: $GOTESTS_VERSION"
-else
-    echo "INFO: This repository doesn't have a gotests.yaml file. Exiting"
-    exit 0
-fi
+# Extract Go version from gotests workflow
+GOTESTS_VERSION=$(grep 'go-version:' processing-tools/.github/workflows/gotests.yaml | sed -E 's/.*go-version:\s*"?([0-9]+\.[0-9]+)"?.*/\1/')
+echo "INFO: gotests.yaml: $GOTESTS_VERSION"
 
 # Extract major.minor version from gotests (e.g., 1.24 from 1.24.0)
 GOTESTS_MAJOR_MINOR=$(echo "$GOTESTS_VERSION" | cut -d. -f1,2)
