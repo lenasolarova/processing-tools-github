@@ -29,6 +29,10 @@ on:
         type: number
         default: 0
 
+    secrets:
+      CODECOV_TOKEN:
+        required: false
+
 jobs:
   gotests:
     runs-on: ubuntu-latest
