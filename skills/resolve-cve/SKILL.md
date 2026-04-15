@@ -219,7 +219,7 @@ References:
 Lint/types/tests: passing.
 ```
 
-Please add any links or even terminal output, both command and stdout, that would proof your statement is true.
+Please add any links or even terminal output, both command and stdout, that would prove your statement is true.
 
 Ask user about Jira transition (same `acli jira workitem transition` command as Path A step 2).
 
