@@ -11,8 +11,8 @@ jobs:
       - id: app_token
         uses: actions/create-github-app-token@v3
         with:
-          app_id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
-          private_key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
+          client-id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
+          private-key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
 
       - name: Checkout Repository
         uses: actions/checkout@v6
