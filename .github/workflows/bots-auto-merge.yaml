@@ -3,12 +3,13 @@
 name: Bots auto-merge
 on:
   workflow_call:
-  pull_request:
+    secrets:
+      OBSINT_PROCESSING_APP_CLIENT_ID:
+        required: true
+      OBSINT_PROCESSING_APP_PRIVATE_KEY:
+        required: true
 
-# This section adds write permissions to the secrets.GITHUB_TOKEN. Default is just read
-# permissions:
-#   contents: write
-#   pull-requests: write
+  pull_request:
 
 jobs:
   bots-automerge:
