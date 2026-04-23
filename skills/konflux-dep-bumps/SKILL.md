@@ -16,7 +16,7 @@ MintMaker (Renovate via Konflux) opens dependency bump PRs with auto-merge enabl
 Check the `open-prs-konflux.md` file there. The date at the top of that file tells you when it was last generated. **If the date does not match today's date, the file is stale — run the fetcher locally and inform the user before proceeding:**
 
 ```bash
-cd open_mr_pr/github   # from the root of your processing-tools clone
+cd /Users/lsolarov/Documents/processing-tools-gh/open_mr_pr/github
 python3 list_repos_prs.py
 cat open-prs-konflux.md
 ```
@@ -41,11 +41,16 @@ Before investigating root cause, try these in order. They resolve a large portio
 
 **Rebase** — covers stale go.sum, go.mod drift, or Renovate artifact failures:
 
+Tick the rebase checkbox in the PR body — Renovate watches for it and re-runs with fresh artifacts:
+
 ```bash
-gh pr comment <PR_NUMBER> --repo RedHatInsights/<REPO> --body "/rebase"
+# Get current PR body, flip the rebase checkbox, and update the PR
+BODY=$(gh api repos/RedHatInsights/<REPO>/pulls/<PR_NUMBER> --jq '.body')
+NEWBODY=$(echo "$BODY" | sed 's/- \[ \] <!-- rebase-check -->/- [x] <!-- rebase-check -->/')
+gh api repos/RedHatInsights/<REPO>/pulls/<PR_NUMBER> --method PATCH --field body="$NEWBODY"
 ```
 
-Or tick the rebase checkbox in the PR body — Renovate watches for it and re-runs with fresh artifacts.
+Note: `/rebase` as a comment does **not** work in these repos. The checkbox in the PR body is the correct trigger. If the checkbox has already been ticked and Renovate still hasn't rebased, push an empty commit to the repo's default branch to make the bot PR go behind by one commit — Renovate will then rebase it automatically on the next run.
 
 **Retest** — covers flaky or environment-dependent failures (infrastructure errors clearly unrelated to the dependency change, e.g. Kafka unreachable, OCM API client errors, DB dial failures). Check whether the Konflux pipeline itself passed even if GitHub Actions failed — that is a strong signal the failure is environmental:
 
