@@ -56,7 +56,7 @@ jobs:
         run: ./processing-tools/go-checkers/check_coverage.sh
 
       - name: Push coverage report to Codecov
-        if: inputs.coverage == true
+        if: inputs.coverage == true && always()
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
