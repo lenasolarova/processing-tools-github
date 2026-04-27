@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-04-26 06:06:39*
+*Last updated: 2026-04-27 06:27:11*
 
-**Total PRs: 8**
+**Total PRs: 9**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-ccx-messaging | [722](https://github.com/RedHatInsights/insights-ccx-messaging/pull/722) | Reusable workflow for Python unit tests | 2026-04-27 | joselsegura | ❌ failed | ready |
 | ccx-notification-service | [1114](https://github.com/RedHatInsights/ccx-notification-service/pull/1114) | Bump github.com/RedHatInsights/insights-operator-utils from 1.27.0 to 1.28.0 | 2026-04-24 | app/dependabot | ✅ ok | ready |
 | ccx-notification-service | [1113](https://github.com/RedHatInsights/ccx-notification-service/pull/1113) | Bump github.com/IBM/sarama from 1.47.0 to 1.48.0 | 2026-04-24 | app/dependabot | ✅ ok | ready |
 | insights-results-smart-proxy | [1711](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1711) | Bump github.com/RedHatInsights/insights-operator-utils from 1.27.0 to 1.28.0 | 2026-04-23 | app/dependabot | ❌ failed | ready |
