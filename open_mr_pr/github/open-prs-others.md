@@ -1,17 +1,15 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-04-30 06:26:51*
+*Last updated: 2026-05-01 06:36:07*
 
-**Total PRs: 14**
+**Total PRs: 12**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-behavioral-spec | [770](https://github.com/RedHatInsights/insights-behavioral-spec/pull/770) | Define minimal package in order to install test dependencies | 2026-04-30 | joselsegura | ✅ ok | ready |
 | insights-results-smart-proxy | [1724](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1724) | Bump github.com/redis/go-redis/v9 from 9.18.0 to 9.19.0 | 2026-04-28 | app/dependabot | ✅ ok | ready |
-| insights-content-template-renderer | [297](https://github.com/RedHatInsights/insights-content-template-renderer/pull/297) | Update setuptools requirement from >=77.0.3 to >=82.0.1 | 2026-04-28 | app/dependabot | ✅ ok | ready |
 | insights-behavioral-spec | [762](https://github.com/RedHatInsights/insights-behavioral-spec/pull/762) | Update python-multipart requirement from >=0.0.19 to >=0.0.27 | 2026-04-27 | app/dependabot | ✅ ok | ready |
 | insights-behavioral-spec | [761](https://github.com/RedHatInsights/insights-behavioral-spec/pull/761) | Update setuptools requirement from >=70.0.0 to >=82.0.1 | 2026-04-27 | app/dependabot | ✅ ok | ready |
-| insights-behavioral-spec | [760](https://github.com/RedHatInsights/insights-behavioral-spec/pull/760) | Update virtualenv requirement from >=20.28.0 to >=21.2.4 | 2026-04-27 | app/dependabot | ✅ ok | ready |
+| insights-behavioral-spec | [760](https://github.com/RedHatInsights/insights-behavioral-spec/pull/760) | Update virtualenv requirement from >=20.28.0 to >=21.3.0 | 2026-04-27 | app/dependabot | ✅ ok | ready |
 | insights-ccx-messaging | [723](https://github.com/RedHatInsights/insights-ccx-messaging/pull/723) | build(deps): update boto3 requirement from <1.42.92,>=1.42.91 to >=1.42.91,<1.42.97 | 2026-04-27 | app/dependabot | ✅ ok | ready |
 | ccx-notification-service | [1114](https://github.com/RedHatInsights/ccx-notification-service/pull/1114) | Bump github.com/RedHatInsights/insights-operator-utils from 1.27.0 to 1.28.0 | 2026-04-24 | app/dependabot | ✅ ok | ready |
 | ccx-notification-service | [1113](https://github.com/RedHatInsights/ccx-notification-service/pull/1113) | Bump github.com/IBM/sarama from 1.47.0 to 1.48.0 | 2026-04-24 | app/dependabot | ✅ ok | ready |
