@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-05-01 06:36:07*
+*Last updated: 2026-05-02 06:06:24*
 
-**Total PRs: 12**
+**Total PRs: 13**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-smart-proxy | [1725](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1725) | Bump github.com/openshift-online/ocm-sdk-go from 0.1.499 to 0.1.500 | 2026-05-01 | app/dependabot | ✅ ok | ready |
 | insights-results-smart-proxy | [1724](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1724) | Bump github.com/redis/go-redis/v9 from 9.18.0 to 9.19.0 | 2026-04-28 | app/dependabot | ✅ ok | ready |
 | insights-behavioral-spec | [762](https://github.com/RedHatInsights/insights-behavioral-spec/pull/762) | Update python-multipart requirement from >=0.0.19 to >=0.0.27 | 2026-04-27 | app/dependabot | ✅ ok | ready |
 | insights-behavioral-spec | [761](https://github.com/RedHatInsights/insights-behavioral-spec/pull/761) | Update setuptools requirement from >=70.0.0 to >=82.0.1 | 2026-04-27 | app/dependabot | ✅ ok | ready |
